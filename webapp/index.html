@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slaying OOMs 中文版 — PyTorch FSDP 与 torchao</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><section class="hero"><div class="eyebrow">简体中文全译本 · 本地阅读版</div>
+<h1>用 PyTorch FSDP 和 torchao<br>解决显存不足</h1>
+<p class="sub">Slaying OOMs with PyTorch FSDP and torchao<br>Christian Mills 的第 12 场会议演讲笔记 · 讲者 Mark Saroufim、Jane Xu · 2024 年 7 月 24 日</p>
+<p class="sub">从模型内存占用、量化与 QLoRA，到 FSDP1 / FSDP2、CPU 卸载，以及双 RTX 3090 基准测试的性能排查。</p>
+<p class="reading-actions"><a class="primary-link" href="all.html">阅读完整译文 →</a><a href="chapters/ch04.html#benchmarking-fsdp2">直达 FSDP2 基准测试 →</a></p>
+<div class="meta"><div><b>5</b>主要章节</div><div><b>13</b>原文小节</div><div><b>5</b>原始插图</div><div><b>3</b>代码块</div></div></section>
+<div class="grid-wrap"><h2>章节与参考资料</h2><div class="chapter-grid"><a class="card" href="chapters/ch00.html"><span class="no">导论</span><span class="zh">用 PyTorch FSDP 和 torchao 解决显存不足</span><span class="en">Introduction</span><span class="desc">演讲背景、全文目录与原始演讲资料。</span></a>
+<a class="card" href="chapters/ch01.html"><span class="no">第 1 章</span><span class="zh">理解模型的内存占用</span><span class="en">Understanding Model Memory</span><span class="desc">参数、梯度、优化器状态与激活的内存开销。</span></a>
+<a class="card" href="chapters/ch02.html"><span class="no">第 2 章</span><span class="zh">优化内存占用</span><span class="en">Optimizing Memory Usage</span><span class="desc">参数量化、torch.compile、LoRA、QLoRA 与张量子类。</span></a>
+<a class="card" href="chapters/ch03.html"><span class="no">第 3 章</span><span class="zh">使用 FSDP 实现模型并行</span><span class="en">Model Parallelism with FSDP</span><span class="desc">数据并行、分片、FSDP1 / FSDP2 与 CPU 卸载。</span></a>
+<a class="card" href="chapters/ch04.html"><span class="no">第 4 章</span><span class="zh">FSDP2 基准测试</span><span class="en">Benchmarking FSDP2</span><span class="desc">双 RTX 3090 实测、配置差异、根因与五类性能差距。</span></a>
+<a class="card" href="chapters/references.html"><span class="no">参考资源</span><span class="zh">来源、术语与翻译说明</span><span class="en">Sources & Translation Notes</span><span class="desc">底本版本、翻译范围、术语对照与许可说明。</span></a></div></div>
+<footer class="foot">非官方中文译本 · 原作者 <a href="https://christianjmills.com/posts/mastering-llms-course-notes/conference-talk-012/">Christian Mills</a> · 内容依据历史版本 4fe5895 · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><br>阅读界面沿用 Ultra-Scale Playbook 中文版的布局与样式。性能结论保留 2024 年语境。</footer>
+</body></html>

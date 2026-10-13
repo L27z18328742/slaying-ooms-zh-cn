@@ -1,0 +1,110 @@
+[
+  {
+    "level": 2,
+    "original": "Introduction",
+    "anchor": "introduction",
+    "translated_in": "content/ch00.md"
+  },
+  {
+    "level": 2,
+    "original": "Understanding Model Memory",
+    "anchor": "understanding-model-memory",
+    "translated_in": "content/ch01.md"
+  },
+  {
+    "level": 2,
+    "original": "Optimizing Memory Usage",
+    "anchor": "optimizing-memory-usage",
+    "translated_in": "content/ch02.md"
+  },
+  {
+    "level": 3,
+    "original": "Optimizer Memory",
+    "anchor": "optimizer-memory",
+    "translated_in": "content/ch02.md"
+  },
+  {
+    "level": 3,
+    "original": "Parameter Quantization",
+    "anchor": "parameter-quantization",
+    "translated_in": "content/ch02.md"
+  },
+  {
+    "level": 3,
+    "original": "Gradient Optimization with LoRA",
+    "anchor": "gradient-optimization-with-lora",
+    "translated_in": "content/ch02.md"
+  },
+  {
+    "level": 3,
+    "original": "Challenges and Solutions with QLoRA",
+    "anchor": "challenges-and-solutions-with-qlora",
+    "translated_in": "content/ch02.md"
+  },
+  {
+    "level": 2,
+    "original": "Model Parallelism with FSDP",
+    "anchor": "model-parallelism-with-fsdp",
+    "translated_in": "content/ch03.md"
+  },
+  {
+    "level": 3,
+    "original": "Data Parallism",
+    "anchor": "data-parallism",
+    "translated_in": "content/ch03.md"
+  },
+  {
+    "level": 3,
+    "original": "FSDP",
+    "anchor": "fsdp",
+    "translated_in": "content/ch03.md"
+  },
+  {
+    "level": 3,
+    "original": "FSDP1 vs. FSDP2",
+    "anchor": "fsdp1-vs.-fsdp2",
+    "translated_in": "content/ch03.md"
+  },
+  {
+    "level": 3,
+    "original": "CPU Offloading",
+    "anchor": "cpu-offloading",
+    "translated_in": "content/ch03.md"
+  },
+  {
+    "level": 2,
+    "original": "Benchmarking FSDP2",
+    "anchor": "benchmarking-fsdp2",
+    "translated_in": "content/ch04.md"
+  },
+  {
+    "level": 3,
+    "original": "Benchmarking Plan",
+    "anchor": "benchmarking-plan",
+    "translated_in": "content/ch04.md"
+  },
+  {
+    "level": 3,
+    "original": "Initial Benchmarking and Discrepancies",
+    "anchor": "initial-benchmarking-and-discrepancies",
+    "translated_in": "content/ch04.md"
+  },
+  {
+    "level": 3,
+    "original": "Identifying the Root Causes",
+    "anchor": "identifying-the-root-causes",
+    "translated_in": "content/ch04.md"
+  },
+  {
+    "level": 3,
+    "original": "Addressing the Discrepancies and Further Benchmarking",
+    "anchor": "addressing-the-discrepancies-and-further-benchmarking",
+    "translated_in": "content/ch04.md"
+  },
+  {
+    "level": 3,
+    "original": "Deep Dive into Performance Gaps",
+    "anchor": "deep-dive-into-performance-gaps",
+    "translated_in": "content/ch04.md"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "page": "index.html",
+    "width": 1440,
+    "title": "Slaying OOMs 中文版 — PyTorch FSDP 与 torchao",
+    "images": 0,
+    "textCharacters": 0,
+    "checks": "passed"
+  },
+  {
+    "page": "all.html",
+    "width": 1440,
+    "title": "完整译文 — Slaying OOMs 中文版",
+    "images": 5,
+    "textCharacters": 10149,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch00.html",
+    "width": 1440,
+    "title": "导论　用 PyTorch FSDP 和 torchao 解决显存不足 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 767,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch01.html",
+    "width": 1440,
+    "title": "第 1 章　理解模型的内存占用 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 807,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch02.html",
+    "width": 1440,
+    "title": "第 2 章　优化内存占用 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2040,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch03.html",
+    "width": 1440,
+    "title": "第 3 章　使用 FSDP 实现模型并行 — Slaying OOMs 中文版",
+    "images": 5,
+    "textCharacters": 1682,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch04.html",
+    "width": 1440,
+    "title": "第 4 章　FSDP2 基准测试 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2719,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/references.html",
+    "width": 1440,
+    "title": "参考资源　来源、术语与翻译说明 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2129,
+    "checks": "passed"
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "title": "Slaying OOMs 中文版 — PyTorch FSDP 与 torchao",
+    "images": 0,
+    "textCharacters": 0,
+    "checks": "passed"
+  },
+  {
+    "page": "all.html",
+    "width": 390,
+    "title": "完整译文 — Slaying OOMs 中文版",
+    "images": 5,
+    "textCharacters": 10149,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch00.html",
+    "width": 390,
+    "title": "导论　用 PyTorch FSDP 和 torchao 解决显存不足 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 767,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch01.html",
+    "width": 390,
+    "title": "第 1 章　理解模型的内存占用 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 807,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch02.html",
+    "width": 390,
+    "title": "第 2 章　优化内存占用 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2040,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch03.html",
+    "width": 390,
+    "title": "第 3 章　使用 FSDP 实现模型并行 — Slaying OOMs 中文版",
+    "images": 5,
+    "textCharacters": 1682,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/ch04.html",
+    "width": 390,
+    "title": "第 4 章　FSDP2 基准测试 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2719,
+    "checks": "passed"
+  },
+  {
+    "page": "chapters/references.html",
+    "width": 390,
+    "title": "参考资源　来源、术语与翻译说明 — Slaying OOMs 中文版",
+    "images": 0,
+    "textCharacters": 2129,
+    "checks": "passed"
+  }
+]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>导论　用 PyTorch FSDP 和 torchao 解决显存不足 — Slaying OOMs 中文版</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="../index.html">Slaying OOMs 中文版<span>PyTorch FSDP 与 torchao</span></a>
+<nav class="chapnav"><a href="../all.html">全文阅读</a><a href="https://christianjmills.com/posts/mastering-llms-course-notes/conference-talk-012/">英文原文 ↗</a></nav></header>
+<div class="layout"><aside class="sidebar"><nav class="toc" id="toc"><h2>章节导航</h2>
+<ol class="book-toc"><li><a href="ch00.html">导论 · 用 PyTorch FSDP 和 torchao 解决显存不足</a></li><li><a href="ch01.html">第 1 章 · 理解模型的内存占用</a></li><li><a href="ch02.html">第 2 章 · 优化内存占用</a></li><li><a href="ch03.html">第 3 章 · 使用 FSDP 实现模型并行</a></li><li><a href="ch04.html">第 4 章 · FSDP2 基准测试</a></li><li><a href="references.html">参考资源 · 来源、术语与翻译说明</a></li></ol><h2>本页目录</h2></nav></aside>
+<main class="main"><article id="content" class="prose"></article>
+<noscript>此页需要 JavaScript 排版。也可直接阅读目录中的完整译文 Markdown 文件。</noscript>
+<nav class="pager"><a class="next" href="ch01.html"><span class="dir">下一章 →</span><div class="ttl">第 1 章　理解模型的内存占用</div></a></nav>
+<footer class="pagefoot">原作者 Christian Mills · 2024-07-24 · 非官方中文译本 ·
+依据历史版本 4fe5895 制作 · 译文 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></footer></main></div>
+<script type="application/json" id="chapter-data">"# 导论　用 PyTorch FSDP 和 torchao 解决显存不足\n\n**Conference Talk 12: Slaying OOMs with PyTorch FSDP and torchao**\n\n> **非官方中文译本** · 原作者：Christian Mills · 原文发布日期：2024 年 7 月 24 日。\n> [原网页](https://christianjmills.com/posts/mastering-llms-course-notes/conference-talk-012/) · [翻译底本：2024 年历史版本](https://github.com/cj-mills/christianjmills/blob/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/index.md)。本译本依据该版本的 CC BY-NC-SA 4.0 许可制作，保留署名，并以相同许可提供非商业改编内容。\n\n在这场演讲中，**Mark Saroufim** 和 **Jane Xu** 讨论了缓解 PyTorch 内存不足（Out of Memory，OOM）错误的技术与工具，重点关注大语言模型（LLM）的使用场景。\n\n> **所属系列**\n>\n> 本文属于 Christian Mills 的 [《Mastering LLMs》课程笔记](https://christianjmills.com/series/notes/mastering-llms-course-notes.html)。该系列记录了 Hamel Husain 与 Dan Becker 主办的《Mastering LLMs: A Conference For Developers & Data Scientists》课程内容。\n\n\u003ca id=\"contents\">\u003c/a>\n\n## 本文目录\n\n- [导论](ch00.html#introduction)\n- [理解模型的内存占用](ch01.html#understanding-model-memory)\n- [优化内存占用](ch02.html#optimizing-memory-usage)\n- [使用 FSDP 实现模型并行](ch03.html#model-parallelism-with-fsdp)\n- [FSDP2 基准测试](ch04.html#benchmarking-fsdp2)\n\n> **演讲资料**\n>\n> [Slaying OOMs 演示文稿及相关资料](https://drive.google.com/drive/u/0/folders/1HmGNC4v4L5nXhtdDMVCpUBrme1ELp-2C)\n\n\u003ca id=\"introduction\">\u003c/a>\n\n## 导论（Introduction）\n\n- 使用大型 PyTorch 模型时，OOM 错误是常见的挑战。\n- 减小批量大小或缩小模型等传统办法，能够发挥的作用有限。\n\n> **译者说明**：这是一篇 2024 年演讲笔记的完整正文翻译。文中的 API、实现限制、“未来版本”的计划和性能数字均保留当时的语境，不代表当前 PyTorch、torchao 或 torchtune 的状态。补充说明均以“译者注”标明。\n"</script>
+<script src="../assets/marked.min.js"></script><script src="../assets/app.js"></script>
+</body></html>

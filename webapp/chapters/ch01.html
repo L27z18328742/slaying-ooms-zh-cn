@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 1 章　理解模型的内存占用 — Slaying OOMs 中文版</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="../index.html">Slaying OOMs 中文版<span>PyTorch FSDP 与 torchao</span></a>
+<nav class="chapnav"><a href="../all.html">全文阅读</a><a href="https://christianjmills.com/posts/mastering-llms-course-notes/conference-talk-012/">英文原文 ↗</a></nav></header>
+<div class="layout"><aside class="sidebar"><nav class="toc" id="toc"><h2>章节导航</h2>
+<ol class="book-toc"><li><a href="ch00.html">导论 · 用 PyTorch FSDP 和 torchao 解决显存不足</a></li><li><a href="ch01.html">第 1 章 · 理解模型的内存占用</a></li><li><a href="ch02.html">第 2 章 · 优化内存占用</a></li><li><a href="ch03.html">第 3 章 · 使用 FSDP 实现模型并行</a></li><li><a href="ch04.html">第 4 章 · FSDP2 基准测试</a></li><li><a href="references.html">参考资源 · 来源、术语与翻译说明</a></li></ol><h2>本页目录</h2></nav></aside>
+<main class="main"><article id="content" class="prose"></article>
+<noscript>此页需要 JavaScript 排版。也可直接阅读目录中的完整译文 Markdown 文件。</noscript>
+<nav class="pager"><a class="prev" href="ch00.html"><span class="dir">← 上一章</span><div class="ttl">导论　用 PyTorch FSDP 和 torchao 解决显存不足</div></a><a class="next" href="ch02.html"><span class="dir">下一章 →</span><div class="ttl">第 2 章　优化内存占用</div></a></nav>
+<footer class="pagefoot">原作者 Christian Mills · 2024-07-24 · 非官方中文译本 ·
+依据历史版本 4fe5895 制作 · 译文 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></footer></main></div>
+<script type="application/json" id="chapter-data">"# 第 1 章　理解模型的内存占用（Understanding Model Memory）\n\n> 译自 Christian Mills 的 [Conference Talk 12](https://christianjmills.com/posts/mastering-llms-course-notes/conference-talk-012/#understanding-model-memory)，原文发表于 2024 年 7 月 24 日。\n\n\u003ca id=\"understanding-model-memory\">\u003c/a>\n\n## 理解模型的内存占用（Understanding Model Memory）\n\n- **显存容量限制**：现代 GPU 的显存容量有限，例如 RTX 3090 和 RTX 4090 都配备 24 GB 显存。这给大型模型训练带来了挑战。\n- **模型内存占用的组成**：\n  - **参数（parameters）**：即模型权重，通常以 FP16 存储，每个参数占 2 字节。对于拥有 70 亿个参数的 LLaMA 7B 模型，这部分需要 14 GB。\n  - **梯度（gradients）**：在反向传播时计算，所需存储空间与参数相同；对于 LLaMA 7B，还需要另外 14 GB。\n  - **优化器状态（optimizer state）**：Adam 等优化器需要保存额外信息，其大小通常是参数存储量的两倍；对于 LLaMA 7B，为 28 GB。\n  - **激活（activations）**：模型各层产生的中间输出。\n    - 激活的大小更难估算，取决于批量大小、上下文长度等因素。\n    - 批量大小和上下文长度较大时，激活往往会成为内存占用的主要部分。\n- **示例**：对 LLaMA 7B 进行全参数微调时，内存需求很容易超过 56 GB：参数 14 GB、梯度 14 GB、优化器状态 28 GB。这已经超过大多数消费级 GPU 的显存容量。\n- **论坛文章**：[如何在不运行模型的情况下测量其内存占用？](https://dev-discuss.pytorch.org/t/how-to-measure-memory-usage-from-your-model-without-running-it/2024/1)\n\n> **译者注：估算的适用范围**\n>\n> 上述 14 / 14 / 28 GB 是原文采用的简化估算，使用十进制 GB。实际占用取决于参数、梯度和优化器状态各自的存储精度，也可能包含主权重、临时缓冲区等额外开销；56 GB 的加和尚未计入激活。第 4 章实测表格使用的是 GiB，需保留这一区别。\n"</script>
+<script src="../assets/marked.min.js"></script><script src="../assets/app.js"></script>
+</body></html>

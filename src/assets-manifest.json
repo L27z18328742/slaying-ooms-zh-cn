@@ -1,0 +1,32 @@
+[
+  {
+    "path": "webapp/assets/images/flatparam-fsdp-1.png",
+    "url": "https://raw.githubusercontent.com/cj-mills/christianjmills/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/images/flatparam-fsdp-1.png",
+    "bytes": 136702,
+    "sha256": "e08ff7a1f1c87160202f10112a2831ac3fe148bcb0ba42c45b1a7670fa7e4e2f"
+  },
+  {
+    "path": "webapp/assets/images/fsdp-memory-step-cpu-offloading.png",
+    "url": "https://raw.githubusercontent.com/cj-mills/christianjmills/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/images/fsdp-memory-step-cpu-offloading.png",
+    "bytes": 756481,
+    "sha256": "f9cb7bc61a16e82fad73d83282ab9ed4facd4098c2b8fd0a068c378c6fb1ccad"
+  },
+  {
+    "path": "webapp/assets/images/fsdp-memory-step.png",
+    "url": "https://raw.githubusercontent.com/cj-mills/christianjmills/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/images/fsdp-memory-step.png",
+    "bytes": 741774,
+    "sha256": "e12681af0e819dec7025e6b30c335e1c4c566fc4a55fc6426e43de8377d40073"
+  },
+  {
+    "path": "webapp/assets/images/oom-with-data-parallelism.png",
+    "url": "https://raw.githubusercontent.com/cj-mills/christianjmills/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/images/oom-with-data-parallelism.png",
+    "bytes": 744155,
+    "sha256": "01bba4e4e51c69b9db5e3eb8114a5212c7d09ab0c51e8ef9b6191b73a1b0ab54"
+  },
+  {
+    "path": "webapp/assets/images/per-parameter-fsdp-2.png",
+    "url": "https://raw.githubusercontent.com/cj-mills/christianjmills/4fe589582bbe57301cd1046764504686f085e64a/posts/mastering-llms-course-notes/conference-talk-012/images/per-parameter-fsdp-2.png",
+    "bytes": 108370,
+    "sha256": "ebd0ddf006690d7328b7049893d9cb9947b4abe62fd2a343f05c6923bcce2b53"
+  }
+]
